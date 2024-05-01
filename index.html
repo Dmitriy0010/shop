@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хиты продаж</title>
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\slick.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_top">
+            <div class="header_content">
+                <div class="header_top-inner">
+                    <a class="logo" href="#">
+                        <img class="logo_img" src="img\logo.webp" alt="Logotip">
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu_list">
+                            <li class="menu-list-item">
+                                <a href="index.html" class="menu_list-link">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="velo.html" class="menu_list-link">
+                                    Отзывы
+                                </a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="accessories.html" class="menu_list-link">
+                                    Аксессуары
+                                </a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="ecip.html" class="menu_list-link">
+                                Скидочная карта
+                                </a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="about.html" class="menu_list-link">
+                                   О нас
+                                </a>
+                            </li>
+
+                            <div class="header__cart cart" tabindex="0">
+                                <div class="cart__text">
+                                    Корзина
+                                    <span class="cart__quantity">0</span>
+                                </div>
+                                <div class="cart-content">
+                                    <ul class="cart-content__list" data-simplebar>
+                                        <!-- <li class="cart-content__item">
+                                        <article class="cart-content__product cart-product">
+                                            <img src="img/macbook.jpg" alt="" class="cart-product__img">
+                                            <div class="cart-product__text">
+                                                <h3 class="cart-product__title">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</h3>
+                                                <span class="cart-product__price">190 789 ₽</span>
+                                            </div>
+                                            <button class="cart-product__delete" aria-label="Удалить товар"></button>
+                                        </article>
+                                    </li>
+                                     -->
+                                    </ul>
+                                    <div class="cart-content__bottom">
+                                        <div class="cart-content__fullprice">
+                                            <span>Итого:</span>
+                                            <span class="fullprice">568 789 ₽</span>
+                                        </div>
+                                        <div class="cart-content__btn btn">Заказать</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="slider-blog">
+        <div class="container">
+            <div class="slider-blog_inner">
+                <div class="slider-blog_item-img1">
+                    <a href="#">
+                        <img src="img\b1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="slider-blog_item-img2">
+                    <a href="#">
+                        <img src="img\b2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="slider-blog_item-img3">
+                    <a href="#">
+                        <img src="img\b3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="slider-blog_item-img4">
+                    <a href="#">
+                        <img src="img\ban4.jpg" alt="">
+                    </a>
+                </div>
+                <div class="slider-blog_item-img5">
+                    <a href="#">
+                        <img src="img\ban5.jpg" alt="">
+                    </a>
+                </div>
+                <div class="slider-blog_item-img1">
+                    <a href="#">
+                        <img src="img\ban6.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <div class="products-content grid-container">
+            <!--                -->
+            <ul class="products-grid">
+                <li class="products-grid__item">
+                    <article class="product">
+                        <a href="prod1.html" class="product__image">
+                            <div class="product__switch image-switch">
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="img/1.jpg" alt="велосипед"></div>
+                                </div>
+                            </div>
+                            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                        </a>
+                        <h3 class="product__title">
+                            <a href="prod1.html">Велосипед горный Denton Storm 2.0 26", 2023</a>
+                        </h3>
+                        <div class="product__props">
+                            <span class="product__rating">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+                                </svg>
+                                4,5
+                            </span>
+                            <span class="product__testimonials">22 отзыва</span>
+                        </div>
+                        <div class="product__info">
+                            <span class="product__term">Артикул: 879870</span>
+                            <span class="product__available">В наличии: 2 шт</span>
+                        </div>
+                        <div class="product__price product-price">
+                            <span class="product-price__current">19 999 ₽</span>
+                            <span class="product-price__old">21 000 ₽</span>
+                        </div>
+                        <button class="product__btn btn">Добавить в корзину</button>
+                    </article>
+                </li>
+                <li class="products-grid__item">
+                    <article class="product">
+                        <a href="prod2.html" class="product__image">
+                            <div class="product__switch image-switch">
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="img/2.jpg" alt="товар"></div>
+                                </div>
+
+                            </div>
+                            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                        </a>
+                        <h3 class="product__title">
+                            <a href="prod2.html">Велосипед подростковый Stern Mount 24", 2023</a>
+                        </h3>
+                        <div class="product__props">
+                            <span class="product__rating">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+                                </svg>
+                                4,5
+                            </span>
+                            <span class="product__testimonials">24 отзыва</span>
+                        </div>
+                        <div class="product__info">
+                            <span class="product__term">Артикул: 879871</span>
+                            <span class="product__available">В наличии: 3 шт</span>
+                        </div>
+                        <div class="product__price product-price">
+                            <span class="product-price__current">35 999 ₽</span>
+                            <span class="product-price__old">37 589 ₽</span>
+                        </div>
+                        <button class="product__btn btn">Добавить в корзину</button>
+                    </article>
+                </li>
+                <li class="products-grid__item">
+                    <article class="product">
+                        <a href="prod3.html" class="product__image">
+                            <div class="product__switch image-switch">
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="img/3.jpg" alt="товар"></div>
+                                </div>
+                            </div>
+                            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                        </a>
+                        <h3 class="product__title">
+                            <a href="prod3.html">Велосипед горный Storm 3.0 Sport 27,5"</a>
+                        </h3>
+                        <div class="product__props">
+                            <span class="product__rating">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+                                </svg>
+                                4,5
+                            </span>
+                            <span class="product__testimonials">46 отзывов</span>
+                        </div>
+                        <div class="product__info">
+                            <span class="product__term">Артикул: 879872</span>
+                            <span class="product__available">В наличии: 10 шт</span>
+                        </div>
+                        <div class="product__price product-price">
+                            <span class="product-price__current">23 999 ₽</span>
+                            <span class="product-price__old">27 988 ₽</span>
+                        </div>
+                        <button class="product__btn btn">Добавить в корзину</button>
+                    </article>
+                </li>
+                <li class="products-grid__item">
+                    <article class="product">
+                        <a href="#" class="product__image">
+                            <div class="product__switch image-switch">
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="img/44.jpg" alt="товар"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="img/45.jpg" alt="товар"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="img/46.jpg" alt="товар"></div>
+                                </div>
+                            </div>
+                            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                        </a>
+                        <h3 class="product__title">
+                            <a href="#">Велосипед горный Stern Energy 2.0 27.5" 2024</a>
+                        </h3>
+                        <div class="product__props">
+                            <span class="product__rating">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+                                </svg>
+                                4,5
+                            </span>
+                            <span class="product__testimonials">38 отзывов</span>
+                        </div>
+                        <div class="product__info">
+                            <span class="product__term">Артикул: 879878</span>
+                            <span class="product__available">В наличии: 5 шт</span>
+                        </div>
+                        <div class="product__price product-price">
+                            <span class="product-price__current">30 999 ₽</span>
+                            <span class="product-price__old">35 235 ₽</span>
+                        </div>
+                        <button class="product__btn btn">Добавить в корзину</button>
+                    </article>
+                </li>
+                <li class="products-grid__item">
+                    <article class="product">
+                        <a href="#" class="product__image">
+                            <div class="product__switch image-switch">
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="img/51.jpg" alt="товар"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="img/52.jpg" alt="товар"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="img/53.jpg" alt="товар"></div>
+                                </div>
+                            </div>
+                            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                        </a>
+                        <h3 class="product__title">
+                            <a href="#">Велосипед горный женский Denton Aura 2.0 26"</a>
+                        </h3>
+                        <div class="product__props">
+                            <span class="product__rating">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+                                </svg>
+                                4,5
+                            </span>
+                            <span class="product__testimonials">54 отзыва</span>
+                        </div>
+                        <div class="product__info">
+                            <span class="product__term">Артикул: 879879</span>
+                            <span class="product__available">В наличии: 15 шт</span>
+                        </div>
+                        <div class="product__price product-price">
+                            <span class="product-price__current">190 789 ₽</span>
+                            <span class="product-price__old">194 578 ₽</span>
+                        </div>
+                        <button class="product__btn btn">Добавить в корзину</button>
+                    </article>
+                </li>
+                <li class="products-grid__item">
+                    <article class="product">
+                        <a href="#" class="product__image">
+                            <div class="product__switch image-switch">
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="img/61.jpg" alt="товар"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="img/62.jpg" alt="товар"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="img/63.jpg" alt="товар"></div>
+                                </div>
+                            </div>
+                            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                        </a>
+                        <h3 class="product__title">
+                            <a href="#">Велосипед для мальчиков Stern Action 24" 2024</a>
+                        </h3>
+                        <div class="product__props">
+                            <span class="product__rating">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+                                </svg>
+                                4,5
+                            </span>
+                            <span class="product__testimonials">9 отзывов</span>
+                        </div>
+                        <div class="product__info">
+                            <span class="product__term">Артикул: 879874</span>
+                            <span class="product__available">В наличии: 9 шт</span>
+                        </div>
+                        <div class="product__price product-price">
+                            <span class="product-price__current">27 699 ₽</span>
+                            <span class="product-price__old">31 231 ₽</span>
+                        </div>
+                        <button class="product__btn btn">Добавить в корзину</button>
+                    </article>
+                </li>
+                <li class="products-grid__item">
+                    <article class="product">
+                        <a href="#" class="product__image">
+                            <div class="product__switch image-switch">
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="img/71.jpg" alt="товар"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="img/72.jpg" alt="товар"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="img/73.jpg" alt="товар"></div>
+                                </div>
+                            </div>
+                            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                        </a>
+                        <h3 class="product__title">
+                            <a href="#">Электровелосипед Eltreco XT 800 Pro 27.5"</a>
+                        </h3>
+                        <div class="product__props">
+                            <span class="product__rating">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+                                </svg>
+                                4,5
+                            </span>
+                            <span class="product__testimonials">4 отзыва</span>
+                        </div>
+                        <div class="product__info">
+                            <span class="product__term">Артикул: 879875</span>
+                            <span class="product__available">В наличии: 1 шт</span>
+                        </div>
+                        <div class="product__price product-price">
+                            <span class="product-price__current">85 999</span>
+                            <span class="product-price__old">93 789 ₽</span>
+                        </div>
+                        <button class="product__btn btn">Добавить в корзину</button>
+                    </article>
+                </li>
+                <li class="products-grid__item">
+                    <article class="product">
+                        <a href="#" class="product__image">
+                            <div class="product__switch image-switch">
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="img/81.jpg" alt="товар"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="img/82.jpg" alt="товар"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="img/83.jpg" alt="товар"></div>
+                                </div>
+                            </div>
+                            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                        </a>
+                        <h3 class="product__title">
+                            <a href="#">Велосипед для девочек Stern Flash 20" 2024</a>
+                        </h3>
+                        <div class="product__props">
+                            <span class="product__rating">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+                                </svg>
+                                4,5
+                            </span>
+                            <span class="product__testimonials">123 отзыва</span>
+                        </div>
+                        <div class="product__info">
+                            <span class="product__term">Артикул: 879876</span>
+                            <span class="product__available">В наличии: 4 шт</span>
+                        </div>
+                        <div class="product__price product-price">
+                            <span class="product-price__current">43 789 ₽</span>
+                            <span class="product-price__old">48 578 ₽</span>
+                        </div>
+                        <button class="product__btn btn">Добавить в корзину</button>
+                    </article>
+                </li>
+                <li class="products-grid__item">
+                    <article class="product">
+                        <a href="#" class="product__image">
+                            <div class="product__switch image-switch">
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="img/91.jpg" alt="товар"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="img/92.jpg" alt="товар"></div>
+                                </div>
+                                <div class="image-switch__item">
+                                    <div class="image-switch__img"><img src="img/93.jpg" alt="товар"></div>
+                                </div>
+                            </div>
+                            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+                        </a>
+                        <h3 class="product__title">
+                            <a href="#">Велосипед  Stern Action 20", 2023</a>
+                        </h3>
+                        <div class="product__props">
+                            <span class="product__rating">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+                                </svg>
+                                4,5
+                            </span>
+                            <span class="product__testimonials">3 отзыва</span>
+                        </div>
+                        <div class="product__info">
+                            <span class="product__term">Артикул: 879877</span>
+                            <span class="product__available">В наличии: 7 шт</span>
+                        </div>
+                        <div class="product__price product-price">
+                            <span class="product-price__current">25 999 ₽</span>
+                            <span class="product-price__old">27 899 ₽</span>
+                        </div>
+                        <button class="product__btn btn">Добавить в корзину</button>
+                    </article>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <hr class="otdel_footer">
+        <div class="container_menu-footer">
+
+            <div class="header_top-inner">
+                <a class="logo" href="#">
+                    <img class="logo_img" src="img\logo.webp" alt="Logotip">
+                </a>
+                <nav class="menu">
+                    <ul class="menu_list">
+                        <li class="menu-list-item">
+                            <a href="index.html" class="menu_list-link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="velo.html" class="menu_list-link">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="accessories.html" class="menu_list-link">
+                                Аксессуары
+                            </a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="ecip.html" class="menu_list-link">
+                                Скидочная карта
+                            </a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="about.html" class="menu_list-link">
+                               О нас
+                            </a>
+                        </li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="scripts\simplebar.js"></script>
+    <script src="scripts\product.js"></script>
+    <script src="scripts\fixed-block.js"></script>
+    <script src="scripts\cart.js"></script>
+
+    <script src="scripts\slick.min.js"></script>
+    <script src="scripts\main.js"></script>
+
+</html>

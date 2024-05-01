@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нашем магазине</title> 
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\slick.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header_top">
+            <div class="header_content">
+                <div class="header_top-inner">
+                    <a class="logo" href="#">
+                        <img class="logo_img" src="img\logo.webp" alt="Logotip">
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu_list">
+                            <li class="menu-list-item">
+                                <a href="index.html" class="menu_list-link">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="velo.html" class="menu_list-link">
+                                    Отзывы
+                                </a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="accessories.html" class="menu_list-link">
+                                    Аксессуары
+                                </a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="ecip.html" class="menu_list-link">
+                                     Скидочная карта
+                                </a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="about.html" class="menu_list-link">
+                                   О нас
+                                </a>
+                            </li>
+
+                            <div class="header__cart cart" tabindex="0">
+                                <div class="cart__text">
+                                    Корзина
+                                    <span class="cart__quantity">0</span>
+                                </div>
+                                <div class="cart-content">
+                                    <ul class="cart-content__list" data-simplebar>
+                                        <!-- <li class="cart-content__item">
+                                        <article class="cart-content__product cart-product">
+                                            <img src="img/macbook.jpg" alt="" class="cart-product__img">
+                                            <div class="cart-product__text">
+                                                <h3 class="cart-product__title">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</h3>
+                                                <span class="cart-product__price">190 789 ₽</span>
+                                            </div>
+                                            <button class="cart-product__delete" aria-label="Удалить товар"></button>
+                                        </article>
+                                    </li>
+                                     -->
+                                    </ul>
+                                    <div class="cart-content__bottom">
+                                        <div class="cart-content__fullprice">
+                                            <span>Итого:</span>
+                                            <span class="fullprice">568 789 ₽</span>
+                                        </div>
+                                        <div class="cart-content__btn btn">заказать</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <div class="feedback-form">
+        <h1 class="title" >Оставьте отзыв</h1>
+        <form id="feedbackForm">
+          <input type="text" id="name" placeholder="Имя" required>
+          <input type="email" id="email" placeholder="Email" required>
+          <div id="rating_bar">
+            <span id="rate_1">&#9734;</span>
+            <span id="rate_2">&#9734;</span>
+            <span id="rate_3">&#9734;</span>
+            <span id="rate_4">&#9734;</span>
+            <span id="rate_5">&#9734;</span>
+          </div>
+          <textarea id="feedback" placeholder="Ваш отзыв" required></textarea>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+
+      <script>
+        function goBack() {
+          window.history.back();
+        }
+    
+        function changeImage(imageUrl) {
+          document.getElementById('main-image').src = imageUrl;
+        }
+    
+        function resetImage() {
+          document.getElementById('main-image').src = 'img/1.jpg';
+        }
+    
+    
+        let spans = document.getElementById("rating_bar").getElementsByTagName('span');
+    
+    for (let i = 0; i < spans.length; i++) {
+      spans[i].onmouseover = hoverStar;
+    }
+    
+    function hoverStar() {
+      for (let i = 0; i < this.id.charAt(5); i++) {
+        spans[i].innerText = '⭐️';
+      }
+    
+      for (let i = this.id.charAt(5); i < 5; i++) {
+        spans[i].innerText = '✰';
+      }
+    }
+      </script>
+
+
+
+    <footer class="footer">
+        <hr class="otdel_footer">
+        <div class="container_menu-footer">
+
+            <div class="header_top-inner">
+                <a class="logo" href="#">
+                    <img class="logo_img" src="img\logo.webp" alt="Logotip">
+                </a>
+                <nav class="menu">
+                    <ul class="menu_list">
+                        <li class="menu-list-item">
+                            <a href="index.html" class="menu_list-link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="velo.html" class="menu_list-link">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="accessories.html" class="menu_list-link">
+                                Аксессуары
+                            </a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="ecip.html" class="menu_list-link">
+                                 Скидочная карта
+                            </a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a href="about.html" class="menu_list-link">
+                               О нас
+                            </a>
+                        </li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="scripts\simplebar.js"></script>
+    <script src="scripts\product.js"></script>
+    <script src="scripts\fixed-block.js"></script>
+    <script src="scripts\cart.js"></script>
+
+    <script src="scripts\slick.min.js"></script>
+    <script src="scripts\main.js"></script>
+</body>
+</html>

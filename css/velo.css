@@ -1,0 +1,108 @@
+body {
+  font-family: 'Roboto', sans-serif; /* Изменен шрифт на Roboto */
+  background-color: #fefcfc; /* Изменен цвет фона на светло-серый */
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #555; /* Изменен цвет заголовка на более темно-серый */
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px; /* Увеличен внешний отступ сверху до 30px */
+}
+
+img {
+  width: 320px; /* Увеличена ширина изображения до 320px */
+  height: 240px; /* Увеличена высота изображения до 240px */
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+div p {
+  margin-bottom: 8px; /* Уменьшен внешний отступ снизу до 8px */
+}
+
+.card {
+  width: 420px; /* Увеличена ширина карточки до 420px */
+  background-color: #ffffff;
+  border-radius: 8px; /* Увеличены скругления углов */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Более выраженная тень */
+  padding: 24px; /* Увеличены внутренние отступы до 24px */
+  margin-bottom: 30px; /* Увеличен внешний отступ снизу до 30px */
+}
+
+.card p {
+  font-size: 16px; /* Увеличен размер текста до 16px */
+  color: #444; /* Изменен цвет текста на более темно-серый */
+}
+
+.card p:first-child {
+  font-size: 20px; /* Увеличен размер заголовка первого параграфа до 20px */
+  font-weight: bold;
+  margin-bottom: 12px; /* Увеличен внешний отступ снизу до 12px */
+}
+
+.back-button {
+  background-color: #007bff; /* Изменен цвет кнопки на синий */
+  border: none;
+  color: white;
+  padding: 12px 24px; /* Увеличены внутренние отступы */
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 18px; /* Увеличен размер текста до 18px */
+  margin: 0 auto; /* Перенесено по центру экрана */
+  cursor: pointer;
+  width: 200px; /* Увеличена ширина кнопки до 200px */
+}
+
+.back-button:hover {
+  background-color: #0056b3; /* Изменен цвет при наведении на более темно-синий */
+}
+
+.back-button:active {
+  background-color: #004286; /* Изменен цвет при нажатии на еще более темно-синий */
+}
+
+.more-images {
+  display: inline-block;
+  justify-content: space-around; /* Изменено выравнивание между изображениями */
+  margin-top: 20px; /* Увеличен внешний отступ сверху до 20px */
+  align-items: center;
+  gap: 12px; /* Увеличен интервал между изображениями до 12px */
+}
+
+.more-images img {
+  width: 100px; /* Увеличена ширина изображений до 100px */
+  height: 80px; /* Увеличена высота изображений до 80px */
+  object-fit: cover;
+  cursor: pointer;
+}
+
+#rating_bar {
+  display: inline-block;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#rating_bar span {
+  font-size: 36px; /* Увеличен размер звезд до 36px */
+  cursor: pointer;
+  margin-right: 8px; /* Увеличен отступ между звездами справа до 8px */
+}
+
+#rating_bar span:last-child {
+  margin-right: 0; /* Убран отступ после последней звезды */
+}
+
+#rating_bar span:hover {
+  color: gold; /* Изменен цвет звезд при наведении на золотой */
+}
+

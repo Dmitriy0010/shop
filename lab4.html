@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета </title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+    <form id="customerForm">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required><br>
+
+
+        <label for="surname">Фамилия:</label>
+        <input type="text" id="surname" name="surname" required><br>
+        
+        <label for="name">Номер телефона:</label>
+        <input type="text" id="name" placeholder="+7 (000) 000-00-00" name="name" required><br>
+
+        <label for="age">Возраст:</label>
+        <input type="number" id="age" name="age" required><br>
+
+        <button  class="button" type='submit'>Отправить</button>
+        <button class="button" onclick='resetForm()'>Ввести данные заново</button>
+    </form>
+
+    <script>
+        function goBack() {
+          window.history.back();
+        }
+    
+        function changeImage(imageUrl) {
+          document.getElementById('main-image').src = imageUrl;
+        }
+    
+        function resetImage() {
+          document.getElementById('main-image').src = 'img/1.jpg';
+        }
+    
+    
+        let spans = document.getElementById("rating_bar").getElementsByTagName('span');
+    
+    for (let i = 0; i < spans.length; i++) {
+      spans[i].onmouseover = hoverStar;
+    }
+    
+    function hoverStar() {
+      for (let i = 0; i < this.id.charAt(5); i++) {
+        spans[i].innerText = '⭐️';
+      }
+    
+      for (let i = this.id.charAt(5); i < 5; i++) {
+        spans[i].innerText = '✰';
+      }
+    }
+      </script>
+
+
+    <script src="scripts\main.js"></script>
+</body>
+</html>
